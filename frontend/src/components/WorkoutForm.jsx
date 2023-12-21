@@ -22,7 +22,7 @@ export default function WorkoutForm() {
 
         const workout = { title, load, reps };
 
-        const response = await fetch("/api/workouts", {
+        const response = await fetch("https://workout-mern-production.up.railway.app/api/workouts/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

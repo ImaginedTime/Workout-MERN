@@ -10,7 +10,7 @@ export default function useLogin() {
         setIsLoading(true);
         setError(null);
 
-        const response = await fetch("/api/user/login", {
+        const response = await fetch("https://workout-mern-production.up.railway.app/api/user/login/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

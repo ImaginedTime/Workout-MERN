@@ -13,7 +13,7 @@ export default function WorkoutDetails({ workout }) {
             return;
         }
 
-        const response = await fetch("/api/workouts/" + workout._id, {
+        const response = await fetch("https://workout-mern-production.up.railway.app/api/workouts/" + workout._id, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

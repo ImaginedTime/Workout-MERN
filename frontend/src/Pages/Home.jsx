@@ -14,7 +14,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-            const response = await fetch("/api/workouts", {
+            const response = await fetch("https://workout-mern-production.up.railway.app/api/workouts/", {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await response.json();
